@@ -1,4 +1,4 @@
-const qrCodeData = "127.0.0.1:5500.motivation.html";
+const qrCodeData = "https://qr-motivation.netlify.app/motivation.html";
 const qrOptions = {
   width: 200,
   height: 200,
