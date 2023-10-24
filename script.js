@@ -29,10 +29,11 @@ $(function () {
         });
         if (imgArray.length > 0) {
           let currentNumber = randomNumber(0, imgArray.length - 1);
-          $(".motivation").css(
-            "background-image",
-            "url(" + imgArray[currentNumber] + ")"
-          );
+          //   $(".motivation").css(
+          //     "background-image",
+          //     "url(" + imgArray[currentNumber] + ")"
+          //   );
+          $(".motivation").html(imgArray[currentNumber]);
         }
       },
       error: function (error) {
