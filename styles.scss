@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Quicksand";
+}
+.main {
+  background-image: url("../../images/dark-mode.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.motivation {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.qr-motivation {
+  width: 320px;
+  padding: 1rem;
+  aspect-ratio: 1 / 1.6;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  &__qr {
+    width: 95%;
+    height: 50%;
+  }
+  &__text {
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      color: #040967;
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  }
+  &__btns {
+    button {
+      background-color: #24e0ff;
+      border: none;
+      color: white;
+      font-weight: 600;
+      &.scan {
+        width: 90px;
+        padding: 0.3rem 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      &.dark-light {
+        padding: 0.4rem;
+        border-radius: 50%;
+        box-shadow: rgba(68, 160, 222, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
