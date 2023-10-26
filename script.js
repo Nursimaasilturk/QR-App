@@ -5,8 +5,11 @@ const qrOptions = {
   colorDark: "#24E0FF", // baskın olan renk
   colorLight: "transparent", // arkaplan rengi
 };
-const qrcode = new QRCode(document.getElementById("qrcode"), qrOptions);
-qrcode.makeCode(qrCodeData);
+if (document.getElementById("qrcode")) {
+  const qrcode = new QRCode(document.getElementById("qrcode"), qrOptions);
+  qrcode.makeCode(qrCodeData);
+}
+
 $(function () {
   const accessKey = "kWS6BZHQxOt0OypyqG0DlnMpqqKAdTW4ns2NdAlvyyE";
   const term = "wonderful";
@@ -33,7 +36,10 @@ $(function () {
           //     "background-image",
           //     "url(" + imgArray[currentNumber] + ")"
           //   );
-          $(".motivation").html(imgArray[currentNumber]);
+          $(".motivation").css(
+            "background-image",
+            `url(${imgArray[currentNumber]})`
+          );
         }
       },
       error: function (error) {
